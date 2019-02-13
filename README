@@ -1,0 +1,36 @@
+------------------------    Paradigme de programare    -----------------------
+
+Tema 2 : Grafuri colorate in Prolog
+Nume : Niculescu
+Prenume : Mihai Alexandru
+Grupa : 325CB
+Sistem de operare : Ubuntu 16.04 LTS 64bit 
+Editor : Visual Studio
+Fisiere: main.pl, README
+-------------------------------------------------------------------------------
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<     Algoritm     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    Pentu aflare drumului  minim care sa respecte restrictiile, am folosit un 
+bfs modificat, in care se retine calea, nu doar nodul si paritile, pentru unele
+formule ca si future pentru care o alegere poate sa elimine calea valida.
+   
+add_to_list(ListNeighborsNotVisited, OldPath, NewPath)
+% functia care adauga fiecare elemntele din [H | T] intr-o lista de forma [H | List]
+% apoi lista rezultata este adaugata in lista de lista Rerz
+% elemplu [H | T] = [2, 4, 5], List = [1]
+% rezulatul va fi Rerz = [ [2, 1], [4, 1], [5, 1] ]
+
+init_queue(Node, Queue):
+%% initializeza coada 
+
+functia care gaseste calea este :
+bfs: bfs(Graph, From, Queue, Path, Fomula)
+%% clauza care determina drumul minim, cum nu avem costuri pe muchi am folosit un bfs modificat
+%% semnatura functie este : bfs(Graph, From, Queue, Path, Fomula)
+
+getOutNeighborsNotVisited(Graph, Node, Visited, ListOfOutNeighborsNotVisited)
+%% semanatura functiei : getOutNeighborsNotVisited(Graph, Node, Visited, ListOfOutNeighborsNotVisited)
+%% clazua genereaza nodurile vecine ale lui N pentru care exista muchie
+ de la N la ele (muchi de iesiere) si care nu sunt in Visited
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
