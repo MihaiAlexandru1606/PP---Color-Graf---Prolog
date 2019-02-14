@@ -33,4 +33,5 @@ getOutNeighborsNotVisited(Graph, Node, Visited, ListOfOutNeighborsNotVisited)
 %% semanatura functiei : getOutNeighborsNotVisited(Graph, Node, Visited, ListOfOutNeighborsNotVisited)
 %% clazua genereaza nodurile vecine ale lui N pentru care exista muchie
  de la N la ele (muchi de iesiere) si care nu sunt in Visited
+ https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
